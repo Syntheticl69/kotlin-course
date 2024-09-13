@@ -1,55 +1,55 @@
 package org.mikhnyukartemm.kotlincourse.lesson3
 
-val name: String = "День рождения" // Название мероприятия
+val name: String = "Hackathon Survival" // Название мероприятия
 
-val date: String = "09.10.2024" // Дата
+var date: String = "09.10.2024" // Дата
 
 val place: String = "Sochi, St.Ivanovskaya 125" // Адресс
 
-var budget: Double = 0.0 // Бюджет
+private val budget: String = "50000" // Бюджет
 
 var member: Int = 0
     get() = field
-    set(value) {
-        if (value >= 0) field = value
-        else field  = 50
-    }      // Число участников может изминиться, кто-то не придет
+    private set(value) {field=value} // Число участников может изминиться, кто-то не придет, но оно не может быть отрицательным
 
-var duration: String = "8 hours"  //Длительность хаккатона может измениться по стечению обстоятельств
+var duration: Long = 8*60*60  //Длительность хаккатона может измениться по стечению обстоятельств
 
-lateinit var contactinformation: String   // Контактная информация будет позднее
+private lateinit var contactinformation: String   // Контактная информация будет позднее
 
-lateinit var status: String    //  Статус мероприятия
+var status: String = "Не начат"   //  Статус мероприятия
 
- var sponsors: String = "список спонсоров" //Мне кажется, что список спонсоров может меняться в какихто случаях
+val sponsors: String = "список спонсоров" //Мне кажется, что список спонсоров может меняться в какихто случаях
 
-var Internetaccesslevel: String = "Высокий" // Уровень интернета может быть разым
+var internetAccessLevel: Int = 0 // Уровень интернета может быть разым
 
-lateinit var mood: String  // Настроение
+val mood: String by lazy { "" }// Настроение определяется по результатам опроса
 
-val Information: String = "Информация о транспартировке"; //Информация о транспортировке оборудования, распределении ресурсов и координации между различными командами поддержки.
+private var information: String = "Информация о транспартировке"; //Информация о транспортировке оборудования, распределении ресурсов и координации между различными командами поддержки.
 
-val plan: String by lazy { "09:00, Встреча гостей"  } //Подробный план хакатона, включающий время и содержание каждого сегмента, инициализируется непосредственно перед началом мероприятия
+lateinit var  plan: String   //Подробный план хакатона, включающий время и содержание каждого сегмента, инициализируется непосредственно перед началом мероприятия
 
 lateinit var specialGuest: String // Специальный гость который будет обьявлен перед началом мероприятия
 
-var Numberofcommands: Int = 0
-    get() = field
-    set(value) {
-        if (value >= 0) field = value
-        else field  = 5
-    }  //Количество команд
+var numberOfCommands: Int = 0
+     //Количество команд
 
 val tasks: String = "Задачи" //Перечень задач
 
-var Evacuationplan: String = "План эвакуации" //План эвакуации
+val evacuationPlan: String = "План эвакуации" //План эвакуации
 
-lateinit var Listofavailableequipment: String //Список доступного оборудования
+var listOfAvailableEquipment: String = "50" //Список доступного оборудования
 
-lateinit var Listoffreeequipment: String //Список свободного оборудования
+var listOfFreeEquipment: String = "50" //Список свободного оборудования
 
+val planInCaseOfFailures: String = "План мероприятия на случай сбоев" //План мероприятий на случай сбоев
 
+lateinit var mealSchedule: String //График питания участников (зависит от поставщика питания, определяемого за неделю до начала)
 
+var listOfExpertsAndJury: String = "" //Список экспертов и жюри
+
+val metod: String = ""//Методы и процедуры для сбора отзывов от участников и гостей, включая анонимные опросы и интервью.
+
+var temperatureIndoor: Int = 24  //Температура помещения
 
 
 
