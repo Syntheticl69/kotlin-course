@@ -1,4 +1,4 @@
-package org.mikhnyukartemm.kotlincourse.lesson3
+package org.mikhnyukartemm.kotlincourse.lesson4
 
 42-Int
 98765432123456789L-Long
