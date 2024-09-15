@@ -7,7 +7,7 @@ package org.mikhnyukartemm.kotlincourse.lesson4
 "Kotlin & Java"-String
 false-Boolean
 'c'-Char
-500-Short
+500-Int
 4294967296L-Long
 18.0f-Float
 -0.001-Double
@@ -21,7 +21,7 @@ false-Boolean
 "Artificial Intelligence"-String
 false-Boolean
 '@'-Char
-1024-Short
+1024-Int
 1234567890123L-Long
 10.01f-Float
 -273.15-Double
@@ -35,7 +35,7 @@ true-Boolean
 "Quantum Computing"-String
 false-Boolean
 'x'-Char
-314-Short
+314-Int
 123456789123456789L-Long
 6.626f-Float
 0.007-Double
