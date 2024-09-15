@@ -12,7 +12,7 @@ false-Boolean
 18.0f-Float
 -0.001-Double
 "OpenAI"-String
-“true”-String
+“true”-??????? // кавычки странные
 '9'-Char
 2048-Int
 10000000000L-Long
@@ -27,8 +27,8 @@ false-Boolean
 -273.15-Double
 "SpaceX"-String
 true-Boolean
-“🤯”-String
-‘65535’-Char
+“🤯”-??????? //Странные кавычки
+‘65535’- ????????? // Это не чар и не стринг
 72057594037927935L-Long
 2.71828f-Float
 101.0101-Double
