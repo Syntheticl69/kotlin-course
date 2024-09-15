@@ -39,3 +39,4 @@ false-Boolean
 123456789123456789L-Long
 6.626f-Float
 0.007-Double
+"Android Studio"-String
