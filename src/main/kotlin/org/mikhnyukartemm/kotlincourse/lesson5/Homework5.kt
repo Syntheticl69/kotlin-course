@@ -26,3 +26,7 @@ package org.mikhnyukartemm.kotlincourse.lesson5
 //(var h = 7; h-- > 6) || (8 + 1 == 9) && (3 % 2 != 1) true || false && false = true
 //((var i = 5; i++ == 5) || (2 * 2 != 4)) && (10 / 2 == 5) true || false & true = true
 //(var j = 4; j-- < 4) && ((6 + 0 == 6) || (5 % 2 != 1)) false && true || false = false
+
+fun main() {
+
+}

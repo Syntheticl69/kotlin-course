@@ -27,7 +27,7 @@ fun main() {
     ((10 - 5) >= 5) || (6 * 2 != 12) && !(9 / 3 > 2) // true
     ((2 * 5) == 10) && !(7 - 3 < 5) || (8 / 2 == 4) //true
      ((9 + 2) < 12) && (15 % 4 != 3) || !(4 * 2 == 8) // false
-    val b = ((3 * 2 == 6) && (9 - 4 != 5))
+
     val defaultName = "Unknown"
 
     var name: String? = "we"
@@ -38,7 +38,7 @@ fun main() {
         val koef = (100 - (s ?: 0))/ 100.0
         println()
     }
-println(b)
+println()
 }
 
 
