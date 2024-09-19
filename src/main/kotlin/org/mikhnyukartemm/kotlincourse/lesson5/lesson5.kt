@@ -35,11 +35,23 @@ fun main() {
     val result = name ?: throw Exception("Не может быть  null")  //  Если нейм равен налл  то анкноу
 
     fun printPrice(price: Double, s: Int?){
-        val koef = (100 - (s ?: 0))/ 100.0
-        println()
+        val koef = (100 - (s ?: 0 ))/100.0
+        println(price * koef)
+
     }
-println()
+
+    fun printSiteLang(lang: String?){
+        val defaultLang: String = "Eng"
+        println(lang ?:"Eng" )
+    }
+
+    fun printBox(stuff: String?) {
+        println(stuff ?: throw Exception("Box is empty"))
+    }
+
 }
+
+
 
 
 

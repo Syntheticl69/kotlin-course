@@ -1,3 +1,5 @@
+@file:Suppress("UNUSED_EXPRESSION")
+
 package org.mikhnyukartemm.kotlincourse.lesson5
 //Простой уровень
 //(12 / 3 > 3) && (5 * 2 == 10) пример решения: true && true = true
@@ -28,5 +30,16 @@ package org.mikhnyukartemm.kotlincourse.lesson5
 //(var j = 4; j-- < 4) && ((6 + 0 == 6) || (5 % 2 != 1)) false && true || false = false
 
 fun main() {
+    printSound(100.0, 0.8)
+    printSound(50.0, null)
 
+
+}
+fun  printSound(sound: Double, attenuationCoefficient: Double?){
+    val koef = attenuationCoefficient ?: (0.5)
+    println(sound * koef)
+}
+fun printfullShippingCost(cost: Double, insurance: Double?){
+    val cargoInsurance = insurance ?: (50.0)
+    println (cost)
 }
