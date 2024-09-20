@@ -29,9 +29,16 @@ package org.mikhnyukartemm.kotlincourse.lesson5
 //((var i = 5; i++ == 5) || (2 * 2 != 4)) && (10 / 2 == 5) true || false & true = true
 //(var j = 4; j-- < 4) && ((6 + 0 == 6) || (5 % 2 != 1)) false && true || false = false
 
+
+
 fun main() {
     printSound(100.0, 0.8)
     printSound(50.0, null)
+
+    printfullShippingPrice(200.0, 0.005)
+    printfullShippingPrice(200.0, null)
+
+
 
 
 }
@@ -39,7 +46,9 @@ fun  printSound(sound: Double, attenuationCoefficient: Double?){
     val koef = attenuationCoefficient ?: (0.5)
     println(sound * koef)
 }
-fun printfullShippingCost(cost: Double, insurance: Double?){
-    val cargoInsurance = insurance ?: (50.0)
-    println (cost)
+fun printfullShippingPrice(price: Double, insurance: Double?){
+    val standartCost = 50
+    val insurance = insurance ?: (0.005)
+    println(price + insurance)
+
 }
