@@ -25,7 +25,7 @@ package org.mikhnyukartemm.kotlincourse.lesson5
 //Продвинутый уровень
 //(var f = 6; --f >= 5) || ((3 * 2 == 6) && (9 - 4 != 5)) true || true && false = true
 //((var g = 0; g++ != 0) && (4 + 2 == 6)) || (5 / 1 == 5) false && true || true = true
-//(var h = 7; h-- > 6) || (8 + 1 == 9) && (3 % 2 != 1) true || false && false = true
+//(var h = 7; h-- > 6) || (8 + 1 == 9) && (3 % 2 != 1) true || true && false = true
 //((var i = 5; i++ == 5) || (2 * 2 != 4)) && (10 / 2 == 5) true || false & true = true
 //(var j = 4; j-- < 4) && ((6 + 0 == 6) || (5 % 2 != 1)) false && true || false = false
 
@@ -35,20 +35,23 @@ fun main() {
     printSound(100.0, 0.8)
     printSound(50.0, null)
 
-    printfullShippingPrice(200.0, 0.005)
-    printfullShippingPrice(200.0, null)
+    printfullShippingCoast(200.0, 5.0)
+    printfullShippingCoast(200.0, null)
 
-
-
-
+    printgetPressureReading("123")
+    printgetPressureReading(null)
 }
 fun  printSound(sound: Double, attenuationCoefficient: Double?){
-    val koef = attenuationCoefficient ?: (0.5)
+    val koef = attenuationCoefficient ?: (0.5) // если значение слева null использовать значение с права
     println(sound * koef)
-}
-fun printfullShippingPrice(price: Double, insurance: Double?){
-    val standartCost = 50
-    val insurance = insurance ?: (0.005)
-    println(price + insurance)
 
+}
+fun printfullShippingCoast(cargoValue: Double?, effectiveCargoValue: Double?){
+    val effectiveCargoValue = cargoValue ?: 50.0
+    val insurance = effectiveCargoValue * 0.05
+    println(effectiveCargoValue + insurance)
+}
+
+fun printgetPressureReading(report: String?){
+    println(report ?: throw Exception("Нет отчета"))
 }
