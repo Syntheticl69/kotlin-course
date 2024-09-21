@@ -55,3 +55,8 @@ fun printfullShippingCoast(cargoValue: Double?, effectiveCargoValue: Double?){
 fun printgetPressureReading(report: String?){
     println(report ?: throw Exception("Нет отчета"))
 }
+
+//printCargoCost (insurance: Double = 0.5, cargo: Double?) {
+//val cost = (((insurance / 100.0) * (cargo ?: 50.0)) + (cargo ?: 50.0))
+//printin (cost)
+
