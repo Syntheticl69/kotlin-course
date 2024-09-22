@@ -60,3 +60,16 @@ fun printgetPressureReading(report: String?){
 //val cost = (((insurance / 100.0) * (cargo ?: 50.0)) + (cargo ?: 50.0))
 //printin (cost)
 
+fun convertTemperature(degrees: Double, unit: String): String {
+
+    if (unit == "C") {
+        val result = (degrees * 9 / 5) + 32
+        return "$result F"
+    }
+    return if (unit == "F") {
+        val resultTwo = ((degrees - 32) / 1.8)
+        return "$resultTwo C "
+    } else {
+        "Не корректные данные "
+    }
+}
