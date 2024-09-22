@@ -35,8 +35,8 @@ fun main() {
     printSound(100.0, 0.8)
     printSound(50.0, null)
 
-    printfullShippingCoast(200.0, 5.0)
-    printfullShippingCoast(200.0, null)
+    printfullShippingCoast(200.0,)
+    printfullShippingCoast(null)
 
     printgetPressureReading("123")
     printgetPressureReading(null)
@@ -46,7 +46,7 @@ fun  printSound(sound: Double, attenuationCoefficient: Double?){
     println(sound * koef)
 
 }
-fun printfullShippingCoast(cargoValue: Double?, effectiveCargoValue: Double?){
+fun printfullShippingCoast(cargoValue: Double?, ){
     val effectiveCargoValue = cargoValue ?: 50.0
     val insurance = effectiveCargoValue * 0.05
     println(effectiveCargoValue + insurance)
