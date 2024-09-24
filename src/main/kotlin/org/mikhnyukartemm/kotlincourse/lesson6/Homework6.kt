@@ -1,7 +1,10 @@
 package org.mikhnyukartemm.kotlincourse.lesson6
 
 fun main () {
-
+println(getSeason(10))
+    println(convertAge(5.0))
+    println(typeOfTransport(1.0))
+    println(calculateBonusPoints(2344.0))
 }
 //ЗАДАЧА1 Напишите функцию, которая на основе номера месяца возвращает сезон года.
 fun getSeason(month: Int): String {
