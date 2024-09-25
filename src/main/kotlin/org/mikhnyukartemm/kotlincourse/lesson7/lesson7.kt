@@ -1,18 +1,18 @@
 package org.mikhnyukartemm.kotlincourse.lesson7
 
-//fun main(){
-////     var counter = 10
-////    while (counter-- > 0){
-////        println(counter)
-////    }
+fun main(){
+//     var i = 0
+//    while (i++ < 5){
+//        println(i * i)
+//    }
 //
-////    do {
-////        println("+")
-////    }while (false)
-//
-////    while (false){
-////        //тело цикла
-////    }
+    do {
+        println("+")
+    }while (false)
+
+    while (false){
+        //тело цикла
+    }
 //
 //    for (i in 1 .. 10 ){
 //        if (i == 2) continue
@@ -22,7 +22,7 @@ package org.mikhnyukartemm.kotlincourse.lesson7
 //
 //}
 
-fun  main(){
+//fun  main(){
 //    for (i in 1 .. 10 ) {
 //        print(i)
 //    }
@@ -46,14 +46,14 @@ fun  main(){
 //    }
 //    var count = 1
 //    var sum = 0
-//    while (count <= 10) {
+//    while (count <= 10){
 //        sum = sum + count++
 //    }
 //        println(sum)
-    var counter = 100
-    while (counter > 1 ){
-        println(counter--.toString().length)
-    }
+//    var counter = 100
+//    while (counter > 1 ){
+//        println(counter--.toString().length)
+//    }
 
 
 }
