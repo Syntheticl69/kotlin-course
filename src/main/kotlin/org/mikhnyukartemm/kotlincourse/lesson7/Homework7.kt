@@ -37,6 +37,38 @@ fun main() {
     while (i >= 5) {
         println(i--)
     }
+    var y = 5
+    do {
+        println(y)
+        y--
+    }
+        while (y >= 1)
+    for (i in 1..10) {
+        if (i == 7) break
+        println(i)
+    }
+    var i2 = 1
+    while (true) {
+        println(i2)
+        if (i2 == 10) break
+        i2++
+    }
+    for (i in 1..10) {
+        if (i % 2 == 0) continue
+            println(i)
+    }
+    for (i in 1..10) {
+        if (i % 3 == 0) continue
+        println(i)
+    }
+    for (i in 1..10) {
+        for (j in 1..10) {
+            print(i * j)
+            print(" ")
+        }
+       println()
+    }
+
 
 
 

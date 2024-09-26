@@ -6,13 +6,13 @@ fun main(){
 //        println(i * i)
 //    }
 //
-    do {
-        println("+")
-    }while (false)
-
-    while (false){
-        //тело цикла
-    }
+//    do {
+//        println("+")
+//    }while (false)
+//
+//    while (false){
+//        //тело цикла
+//    }
 //
 //    for (i in 1 .. 10 ){
 //        if (i == 2) continue
@@ -44,12 +44,12 @@ fun main(){
 //    for (i in 1 .. 30 step 3){
 //        println(i)
 //    }
-//    var count = 1
-//    var sum = 0
-//    while (count <= 10){
-//        sum = sum + count++
-//    }
-//        println(sum)
+    var count = 1
+    var sum = 0
+    while (count <= 10){
+        sum = sum + count++
+    }
+        println(sum)
 //    var counter = 100
 //    while (counter > 1 ){
 //        println(counter--.toString().length)
