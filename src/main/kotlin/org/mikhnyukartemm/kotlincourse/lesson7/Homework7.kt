@@ -39,12 +39,12 @@ fun main() {
     }
     var y = 5
     do {
-        println(y)
-        y--
+        println(y--)
+
     }
         while (y >= 1)
     for (i in 1..10) {
-        if (i == 7) break
+        if (i == 6) break
         println(i)
     }
     var i2 = 1
@@ -68,16 +68,4 @@ fun main() {
         }
        println()
     }
-
-
-
-
-
-
-
-
-
-
-
-
 }
