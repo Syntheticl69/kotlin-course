@@ -22,11 +22,12 @@ fun  main() {
 //    val resultString = "Результат сложения x и y ${x + y}"
 //    println(resultString)
 //class Person(val name: String, val age: Int)
-//     val originalString = "Kotlin is fun"
+     val originalString = "Kotlin is fun"
 //    val subString = originalString.substring(7)
 //    val subString2 = originalString.substring(3, 6)
 //    val replacedString = originalString.replace("n", "w")
-//    val words = originalString.split(" ")
+    val words = originalString.split(" ")
+    println(words)
 //    val length = "Hello".length
 //    val upper = "hello".uppercase()
 //    val lower = "HELLO".lowercase()

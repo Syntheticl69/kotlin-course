@@ -33,4 +33,39 @@ fun main(){
     val replace = text.replace("@", " [at] ")
         .replace(".", " [dot] ")
     println(replace)
+
+//    Задание 4: Извлечение Имени Файла из Пути
+    val path = "C:/Пользователи/Документы/report.txt"
+    println(path.substring(26, 36))
+
+//    Задание 5: Создание Аббревиатуры из Фразы. Используй split с набором символов для разделения.
+//    Используй for для перебора слов. Используй var переменную для накопления первых букв.
+    val phrase = "Объектно-ориентированное программирование"
+    val words = phrase.split("-", " ")
+    var abbreviation = ""
+
+    for (word in words){
+        if (word.isNotEmpty()){
+            abbreviation += word [0]
+        }
+    }
+    println(abbreviation.uppercase())
+
+    val size = 9
+
+    print("    ")
+    for (i in 1..size) {
+        print("%4d".format(i))
+    }
+    println()
+
+    println("".repeat(size * 1))
+
+    for (i in 1..size) {
+        print("%2d  ".format(i))
+        for (j in 1..size) {
+            print("%4d".format(i * j))
+        }
+        println()
+    }
 }
