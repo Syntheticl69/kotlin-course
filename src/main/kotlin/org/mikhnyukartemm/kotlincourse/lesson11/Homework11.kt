@@ -114,22 +114,22 @@ fun main() {
 
     //    Задание 6: Словарь Библиотека
 //    Ключи - автор книги, значения - список книг
-    val mapExtTask6 = mutableMapOf<String, MutableList<String>>()
+    val map6 = mutableMapOf<String, MutableList<String>>()
 
 //    Задание 12: Справочник Растений
 //    Ключи - типы растений (например, "Цветы", "Деревья"), значения - списки названий растений
-    val mapExtTask12 = mapOf<String, List<String>>()
+    val map121 = mapOf<String, MutableList<String>>()
 
 //    Задание 8: Четвертьфинала
 //    Ключи - названия спортивных команд, значения - списки игроков каждой команды
-    val mapExtTask8 = mapOf<String, List<String>>()
+    val map81 = mapOf<String, MutableList<String>>()
 
 //    Задание 9: Курс лечения
 //    Ключи - даты, значения - список препаратов принимаемых в дату
-    val mapExtTask9 = mapOf<String, MutableList<String>>()
+    val mmap91= mapOf<String, MutableList<String>>()
 
 //    Задание 10: Словарь Путешественника
 //    Ключи - страны, значения - словари из городов со списком интересных мест.
-    val mapExtTask10 = mutableMapOf<String, List<String>>()
+    val map101 = mapOf<String, Map<String, List<String>>>()
     
 }
