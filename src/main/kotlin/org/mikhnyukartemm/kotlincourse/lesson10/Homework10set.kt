@@ -58,7 +58,7 @@ fun main() {
         return false
     }
     println(privet(set7, "Привет0"))
-    println(privet(set7, "Привет2"))
+    println(privet(set7, "привет4"))
 
 
 //Задание 8: Объединение Двух Множеств
@@ -66,7 +66,7 @@ fun main() {
 // Реши задачу с помощью циклов.
 
     val set8 = setOf("privet1", "privet2")
-    val set81 = setOf("privet3", "privet2")
+    val set81 = setOf("privet3", "privet1")
     val set82 = mutableSetOf<String>()
 
     for (i in set8) {
