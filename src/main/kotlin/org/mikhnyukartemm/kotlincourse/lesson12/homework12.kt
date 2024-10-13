@@ -148,7 +148,7 @@ fun drawRectangleRefactor(width: Int, height: Int) {
     print(headerOrBottom())
     //боковина
     repeat(height - 2) {print(sides())}
-    //нижняя граница
+    //нижняя границаa
     print(headerOrBottom())
 }
 
