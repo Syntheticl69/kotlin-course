@@ -4,7 +4,7 @@ fun main() {
 
     val result1 = multiplyByTwo(100)
     print("$result1\n")
-    val result2 = isEven(2)
+    val result2 = isEven(3)
     print("$result2\n")
     printNumbersUntil(5)
     val result4 = findFirstNegative(listOf(-1,-2,4,5,7))
@@ -34,8 +34,8 @@ fun fun4(l: List<Int>): Double {
 }
 
 //Напишите сигнатуру функции, которая принимает nullable строку и возвращает её длину в виде nullable целого числа.
-fun fun5(s: String?): Int? {
-    return s?.length
+fun fun5(a: String?): Int? {
+    return a?.length
 }
 
 //Напишите сигнатуру функции, которая не принимает аргументов и возвращает nullable вещественное число
@@ -44,7 +44,7 @@ fun fun6(): Double? {
 }
 
 //Напишите сигнатуру функции, которая принимает nullable список целых чисел и не возвращает значения
-fun fun6(l: List<Int?>) {
+fun fun6(l: List<Int>?) {
 
 }
 
@@ -64,9 +64,8 @@ fun fun9(s: String?, i: Int?): Boolean {
 }
 
 //Напишите функцию multiplyByTwo, которая принимает целое число и возвращает его, умноженное на 2.
-fun multiplyByTwo(num: Int): Int {
-    return num * 2
-}
+fun multiplyByTwo(num: Int) = num * 2
+
 
 //Создайте функцию isEven, которая принимает целое число и возвращает true, если число чётное, и false в противном случае.
 fun isEven(num1: Int): Boolean {
