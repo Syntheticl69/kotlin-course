@@ -7,15 +7,16 @@ fun main() {
     val result2 = isEven(3)
     print("$result2\n")
     printNumbersUntil(5)
-    val result4 = findFirstNegative(listOf(-1,-2,4,5,7))
+    val result4 = findFirstNegative(listOf(-1, -2, 4, 5, 7))
     print("$result4\n")
     val result5 = processList(listOf("123", null, "sdds"))
     print("$result5\n")
-    drawRectangle(50,5)
+    drawRectangle(50, 5)
     println("-------------------------------------------------")
-    drawRectangleRefactor(50,5)
+    drawRectangleRefactor(50, 5)
 
 }
+
 //Напишите сигнатуру функции, которая не принимает аргументов и не возвращает значения
 fun fun1() {
 }
@@ -68,17 +69,15 @@ fun multiplyByTwo(num: Int) = num * 2
 
 
 //Создайте функцию isEven, которая принимает целое число и возвращает true, если число чётное, и false в противном случае.
-fun isEven(num1: Int): Boolean {
-    return num1 % 2 == 0
-}
+fun isEven(num1: Int) = num1 % 2 == 0
 
 //Напишите функцию printNumbersUntil, которая принимает целое число n и выводит на экран числа от 1 до n.
 //Если число n меньше 1, функция должна прекратить выполнение с помощью return без вывода сообщений.
 fun printNumbersUntil(n: Int) {
     if (n < 1) return
-    else{
-        for(i in 1..n){
-            print("$i ")
+    else {
+        for (i in 1..n) {
+            print("$i")
         }
         println()
     }
@@ -87,8 +86,10 @@ fun printNumbersUntil(n: Int) {
 //Создайте функцию findFirstNegative, которая принимает список целых чисел и возвращает первое отрицательное число в списке.
 //Если отрицательных чисел нет, функция должна вернуть null.
 fun findFirstNegative(list1: List<Int>): Int? {
-    for (l in list1){
-        if (l < 0) {return l}
+    for (r in list1) {
+        if (r < 0) {
+            return r
+        }
     }
     return null
 }
@@ -96,9 +97,10 @@ fun findFirstNegative(list1: List<Int>): Int? {
 //Напишите функцию processList, которая принимает список строк. Функция должна проходить по списку и выводить каждую строку.
 //Если встречается null значение, функция должна прекратить выполнение с помощью return без возврата значения
 fun processList(list2: List<String?>) {
-    for (l in list2){
-        if (l == null) return
-        println(l)
+    for (r in list2) {
+        if (r == null)
+            return
+        println(r)
     }
 }
 
@@ -138,15 +140,16 @@ fun drawRectangle(width: Int, height: Int) {
 
 fun drawRectangleRefactor(width: Int, height: Int) {
 
-    if (width <= 0 || height <= 0) throw Exception ("width и height должно быть положительным и больше нуля")
+    if (width <= 0 || height <= 0) throw Exception("width и height должно быть положительным и больше нуля")
     //нижняя или верхняя граница
     fun headerOrBottom(): String = "+" + "-".repeat(width - 2) + "+\n"
+
     //боковые границы
     fun sides(): String = "|" + " ".repeat(width - 2) + "|\n"
     //верхняя граница
     print(headerOrBottom())
     //боковина
-    repeat(height - 2) {print(sides())}
+    repeat(height - 2) { print(sides()) }
     //нижняя границаa
     print(headerOrBottom())
 }
