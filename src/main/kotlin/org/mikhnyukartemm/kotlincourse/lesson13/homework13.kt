@@ -156,6 +156,6 @@ fun task2(numbers: List<Int>): String {
         numbers.maxOrNull() ?: Int.MIN_VALUE < -10 -> "Отрицательная"
         numbers.minOrNull() ?: Int.MAX_VALUE > 1000 -> "Положительная"
         numbers.contains(3) && numbers.contains(14) -> "Пи***тая"
-        else -> "Уникальная"
+        else -> "Уникальна"
     }
 }
