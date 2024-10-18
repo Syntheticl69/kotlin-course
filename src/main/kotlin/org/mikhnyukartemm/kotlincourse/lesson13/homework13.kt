@@ -144,6 +144,8 @@ fun main() {
     println(task2(listOf(-11, -20, -30))) // Отрицательная
     println(task2(listOf(1001, 1002))) // Положительная
     println(task2(listOf(3, 14, 5))) // Пи***тая
+
+    //Почему-то криво проверяется не могу понять почему так
 }
 fun task2(numbers: List<Int>): String {
     return when {
