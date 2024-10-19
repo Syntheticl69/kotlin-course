@@ -1,6 +1,6 @@
 package org.mikhnyukartemm.kotlincourse.lesson14
 
-fun main(){
+fun main() {
     val fruitsPrices = mapOf("apple" to 2.99, "banana" to 1.99, "cherry" to 3.99)
 
     for (entry in fruitsPrices.entries) {
@@ -17,5 +17,6 @@ fun main(){
 
     val priceOfPearOrElse = fruitsPrices.getOrElse("pear") { throw IllegalArgumentException() }
     val priceOfApple = fruitsPrices.getValue("apple")
-    val priceOfPearOrDefault = fruitsPrices.getOrDefault("pear", 0.0)
+//    val priceOfPearOrDefault = fruitsPrices.getOrDefault("pear", 0.0)
+//}
 }
