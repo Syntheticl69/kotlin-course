@@ -10,18 +10,24 @@ fun main() {
 //Имеется словарь с метаданными автоматизированных тестов, где ключи — это имена тестовых методов а значения - строка с метаданными.
 // Выведите список всех тестовых методов.
 
-    val metaData = mapOf<String, String>("method 1" to "metadata 1", "method 2" to "metadata 2")
+    val metaData = mapOf<String, String>(
+        "method 1" to "metadata 1",
+        "method 2" to "metadata 2"
+    )
     println(metaData.keys)
 
 //В изменяемый словарь с данными о прохождении тестов добавьте новый тест и его результат.
 
-    val results = mutableMapOf("the first test" to "Passed", "the second test" to "Failed")
-    val newResults = results + ("the third test" to "Not Started") + ("the 4th test" to "Passed")
-    println(newResults)
+    val results = mutableMapOf(
+        "the 1 test" to "Passed",
+        "the 2 test" to "Failed"
+    )
+    results["the 3 test"] = "Passed"
+    println(results)
 
 //Посчитайте количество успешных тестов в словаре с результатами.
 
-    val passedTests = newResults.count { it.value == "Passed" }
+    val passedTests = results.count { it.value == "Passed" }
     println(passedTests)
 
 //Удалите из изменяемого словаря с баг-трекингом запись о баге, который был исправлен.
@@ -176,5 +182,7 @@ fun main() {
 //Отфильтруйте словарь с результатами тестирования сервисов, оставив только те тесты, которые не прошли успешно и содержат
 // в названии “optional”.
 
-    println(resultsAutoTests.filterKeys { it.contains("optional") })
+    println(resultsAutoTests
+        .filterKeys { it.contains("optional") }
+        .filterValues {it == "Passed"})
 }
