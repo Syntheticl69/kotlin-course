@@ -6,6 +6,6 @@ class Party(
 ) {
 
     fun details(){
-        println("$location, $attendees")
+        println(" локация $location, $attendees")
     }
 }

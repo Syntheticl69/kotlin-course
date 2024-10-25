@@ -6,7 +6,7 @@ class Moon(
 ) {
     fun showPhase() {
         if (isVisible) {
-            println("Луна видима и её текущая фаза: $phase.")
+            println("Луна видима и её текущая фаза : $phase.")
         } else {
             println("Луна не видима.")
         }

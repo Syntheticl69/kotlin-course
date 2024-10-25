@@ -6,6 +6,6 @@ class Emotion(
 ) {
 
         fun express(){
-        println("Сегодня я $type, интенсивность $intensity")
+        println("Сегодня я очень $type, интенсивность $intensity")
     }
 }

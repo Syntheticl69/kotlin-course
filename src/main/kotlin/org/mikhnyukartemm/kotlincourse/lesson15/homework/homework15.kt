@@ -4,7 +4,7 @@ fun main(){
     val Party1 = Party("Саратов", 30)
     Party1.details()
 
-    val myEmotion = Emotion("Радостный", 5)
+    val myEmotion = Emotion("Злой", 5)
     myEmotion.express()
 
     val moon = Moon(false, "Full Moon")

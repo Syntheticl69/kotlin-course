@@ -13,7 +13,7 @@ class Concert(
             ticketsSold++
             println("Билет куплен! Билетов продано: $ticketsSold")
         } else {
-            println("Билеты закончилис!")
+            println("Билеты закончились!")
         }
     }
 
