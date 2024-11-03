@@ -14,7 +14,7 @@ fun main() {
     val shapes: List<Shape> = listOf(
         Circle(10.0),
         Square(4.0),
-        Triangle(3.0, 4.0, 90.0)
+        Triangle(3.0, 4.0, 60.0)
     )
 
     // Выводим площади фигур
