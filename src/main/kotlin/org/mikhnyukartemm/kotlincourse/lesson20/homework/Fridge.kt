@@ -1,6 +1,6 @@
 package org.mikhnyukartemm.kotlincourse.lesson20.homework
 import java.io.InputStream
-import javax.sql.rowset.FilteredRowSet
+
 
 abstract class Fridge : Powerable, Openable, TemperatureRegulatable, Drainable, LightEmitting, SoundEmitting  {
 

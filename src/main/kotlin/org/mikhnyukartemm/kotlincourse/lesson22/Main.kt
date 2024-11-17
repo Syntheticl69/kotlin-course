@@ -4,12 +4,12 @@ import org.mikhnyukartemm.kotlincourse.lesson22.homework22.*
 
 fun main() {
 
-    val arrayNumb = arrayOf(22, 38, 75, 101)
+    val arrayNumb = arrayOf(24, 48, 85, 123)
     println(arrayNumb.funPairOfInts())
 
-    'A'.funCharNull(5, 7, false)
+    'И'.funCharNull(12, 6, false)
 
-    val mutableList = mutableListOf("test1", "test2", "test3")
+    val mutableList = mutableListOf("тест1", "тест2", "тест3")
     println(mutableList.funChangeValue("string1", 3))
 
     val map: Map<Int?, List<Int>?> = mapOf(
@@ -35,6 +35,6 @@ fun main() {
     println("test string decrypt".encrypt(6))
 
     val letters = listOf("P", "I", "D", "M", "A", "R", "K", "O", "Z")
-    val users = listOf("User1", "User2", "User3", "User4", "User5")
+    val users = listOf("Максим", "Илья", "Артем", "Дима", "Слава")
     letters.pidmarkoz(users)
 }
